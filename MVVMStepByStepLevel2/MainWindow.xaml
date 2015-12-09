@@ -1,0 +1,12 @@
+﻿<Window x:Class="MVVMStepByStepLevel2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        DataContext="{StaticResource CustomerViewObj}"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="lblName" Content="{Binding TxtCustomerName, Source={StaticResource CustomerViewObj}}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblAmount" Content="{Binding TxtAmount, Source={StaticResource CustomerViewObj}}" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkMarried" Content="{Binding IsMarried, Source={StaticResource CustomerViewObj}}" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
